@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login to SharePix</title>
+  <link rel="shortcut icon" href="/images/s-logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="content">
+      <!--pinterest logo-->
+      <img src="/images/s.png" alt="pin logo" class="img1" />
+      <p class="header">Log In to see more</p>
+
+      <% if(error.length > 0){ %>
+          <p class="error"><%= error %></p>
+      <% } %>
+
+      <form action="/login" method="post">
+        <input type="text" name="username" placeholder="Username" class="detail" /><br />
+        <input type="password" name="password" placeholder="Password" class="detail" />
+        <input type="submit" class="btn int" value="Login Now">
+      </form>
+
+      <a href="/forgot" class="forgot">Forgot your password?</a>
+
+      <footer>
+        <p>
+          By continuing, you agree to SharePix's
+          <b>Terms of Service, Privacy policy.</b>
+        </p>
+        <hr />
+        <p>Not on SharePix yet? <a href="/">Sign up</a> </p>
+      </footer>
+    </div>
+  </div>
+  <a href="/" class="upbtn">Sign up</a>
+
+</body>
+</html>

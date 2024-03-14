@@ -1,0 +1,118 @@
+<footer class="custom-footer">
+    <style>
+        .custom-footer {
+	background-color: #212529; /* Darker background color */
+	color: #fff; /* Text color */
+	padding: 1rem 0; /* Adjust padding as needed */
+  }
+
+  .custom-container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+  }
+
+  .custom-row {
+	display: flex;
+	flex-wrap: wrap;
+  }
+
+  .custom-col {
+	margin-bottom: 15px;
+  }
+
+  .custom-col-1 {
+	flex: 0 0 8%; /* 1/12 */
+  }
+
+  .custom-col-5 {
+	flex: 0 0 40%;
+    margin-left: 30px;
+  }
+
+  .custom-col-5 p{
+	margin-top: 0;
+    margin-bottom: 1rem;
+    margin-right: 50px;
+    text-align: start;
+  }
+
+  .custom-col-3 {
+	flex: 0 0 20%; /* 3/12 */
+  }
+
+  .custom-logo {
+	width: 90px;
+	overflow: hidden;
+  }
+
+  .custom-heading {
+	font-size: 1.5rem;
+	margin-bottom: 15px;
+  }
+
+  .custom-list {
+	list-style: none;
+	padding: 0;
+  }
+
+  .custom-list-item {
+	margin-bottom: 10px;
+  }
+
+  .custom-link {
+	color: #fff;
+	text-decoration: none;
+	transition: color 0.3s ease;
+  }
+
+  .custom-link:hover {
+	color: #6faaff; /* Change color on hover */
+  }
+
+  .custom-icon {
+	color: #fff;
+  }
+
+  .custom-icon:hover {
+	color: #6faaff;
+  }
+  /* one for footer  */
+  @media (max-width: 768px) {
+    .custom-col-1, .custom-col-5, .custom-col-3 {
+        flex: 0 0 100%;
+    }
+
+    .custom-col-5 {
+        margin-left: 0;
+    }
+}
+    </style>
+    <div class="custom-container">
+      <div class="custom-row">
+        <div class="custom-col custom-col-1">
+          <img class="custom-logo" src="/images/s-logo.png" alt="Logo">
+        </div>
+        <div class="custom-col custom-col-5">
+          <h4 class="custom-heading">About Us</h4>
+          <p>SharePix is all about sharing Wallpapers and images with other users so they can Download it and enjoy with all Awesome Wallpapers out there in our tab, I'm Harsh Wagh Developer of this website, if you have any concerns you can Connect with me.</p>
+        </div>
+        <div class="custom-col custom-col-3">
+          <h4 class="custom-heading">Quick Links</h4>
+          <ul class="custom-list">
+            <li class="custom-list-item"><a href="#" class="custom-link">Back to Top</a></li>
+            <li class="custom-list-item"><a href="/add" class="custom-link">Add post</a></li>
+            <li class="custom-list-item"><a href="/show/posts" class="custom-link">View posts</a></li>
+          </ul>
+        </div>
+        <div class="custom-col custom-col-3">
+          <h4 class="custom-heading">Connect with Us</h4>
+          <ul class="list-inline">
+            <li class="list-inline-item"><a href="https://www.instagram.com/harshwagh.21/" target="_blank" class="custom-link"><i class="ri-instagram-line custom-icon"></i></a></li>
+            <li class="list-inline-item"><a href="https://www.linkedin.com/in/harsh-wagh-07b352254/" target="_blank" class="custom-link"><i class="ri-linkedin-fill custom-icon"></i></a></li>
+            <li class="list-inline-item"><a href="https://github.com/Harshwagh21" target="_blank" class="custom-link"><i class="ri-github-fill custom-icon"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>

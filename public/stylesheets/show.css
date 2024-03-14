@@ -1,0 +1,71 @@
+@font-face {
+    font-family: Gilroy;
+    src: url(/fonts/Gilroy-Regular.ttf);
+  }
+*{
+    box-sizing: border-box;
+    font-family: Gilroy;
+}
+.hme{
+    background-color: #dadada;
+    
+}
+.vh{
+    min-height: 100vh;
+}
+.navbar{
+    background: linear-gradient(to bottom, #8d8d8d, #dadada);
+}
+
+.allpost{
+    padding: 32px 40px 32px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    /* font-weight: 800; */
+}
+.cardss{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.cardcoll{
+    width: 200px;
+    margin-left: 10px;
+    margin-right: 10px;
+    /* font-weight: 800; */
+}
+.cards{
+    width: 150px;
+    height: 200px;
+    border-radius: 8px;
+    background: #890300;
+    overflow: hidden;
+}
+.img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.hff{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    font-weight:600;
+}
+.timedate{
+    font-size: small;
+}
+
+@media (max-width: 767px) {
+    .allpost {
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  @media (max-width: 991px) {
+	.logoff {
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	}
+  }
